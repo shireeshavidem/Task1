@@ -16,20 +16,13 @@ for var in "shireesha":
 # pass statement
 
 s = "shireesha"
-
 # Empty loop
 for i in s:
-	# No error will be raised
 	pass
-
 # Empty function
 def fun():
 	pass
-
-# No error will be raised
 fun()
-
-# Pass statement
 for i in s:
 	if i == 'h':
 		print('Pass executed')
