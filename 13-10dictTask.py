@@ -71,19 +71,69 @@
 # print(dictionary)
 
 # 6. Write a Python program to sum all the items in a dictionary.
-dictionary = {}
-n = int(input("Enter range of dictionary: "))
-def sum_dict(dictionary):
-  for i in range(n):
-    dictkeys = int(input("Enter your dictinary keys: "))
-    dictvalues = int(input("Enter your dictionary values: "))
-    dictionary[dictkeys] = dictvalues
-  print(dictionary)
-  for key in dictionary.keys():
-      dictkeys += key
-  print("sum of keys: ",dictkeys)    
-  for value in dictionary.values():
-        dictvalues += value  
-  print("sum of values: ",dictvalues) 
-sum_dict(dictionary)
- 
+# dictionary = {}
+# n = int(input("Enter range of dictionary: "))
+# def sum_dict(dictionary):
+#   for i in range(n):
+#     dictkeys = int(input("Enter your dictinary keys: "))
+#     dictvalues = int(input("Enter your dictionary values: "))
+#     dictionary[dictkeys] = dictvalues
+#   print(dictionary)
+#   for key in dictionary.keys():
+#       dictkeys += key
+#   print("sum of keys: ",dictkeys)    
+#   for value in dictionary.values():
+#         dictvalues += value  
+#   print("sum of values: ",dictvalues) 
+# sum_dict(dictionary)
+
+
+# 7.Write a Python program to combine two dictionary by adding values for common keys.
+# d1 = {'a': 100, 'b': 200, 'c':300}
+# d2 = {'a': 300, 'b': 200, 'd':400}
+# Sample output: Counter({'a': 400, 'b': 400, 'd': 400, 'c': 300})
+
+# dict1 = {'a': 3, 'b': 4, 'd': 5}
+# dict2 = {'a': 1, 'b': 2, 'c': 3}
+# def combine_dictionaries(d1,d2):
+
+#   combined_dict = dict1.copy()
+#   for key, value in dict2.items():
+#     if key in combined_dict:
+#       combined_dict[key] += value
+#     else:
+#       combined_dict[key] = value
+
+#   return combined_dict
+# combined_dict = combine_dictionaries(dict1, dict2)
+# print(combined_dict) 
+
+
+# 8.Write a Python program to access dictionary key's element by index.
+# Expected Output:
+# physics
+# math
+# chemistry
+
+# dictionary = {}
+# n = int(input("Enter range of dictionary: "))
+# for i in range(n):
+#   dictkeys = input("Enter your dictinary keys: ")
+#   dictvalues = input("Enter your dictionary values: ")
+#   dictionary[dictkeys] = dictvalues
+# print(dictionary)
+# index = input("Enter the key want to access: ")
+# value = dictionary[index]
+# print(value)
+
+# 9.Write a Python program to remove a key from a dictionary.
+# rem = input("Enter the key youwant to remove: ")
+# del dictionary[rem]
+# print(dictionary)
+
+
+# 10.Write a Python script to merge two Python dictionaries.
+dict1 = {"name":"siri","age":22}
+dict2 = {"address": "123 Main Street", "phone number": "123-456-7890"}
+merge_dict = {**dict1,**dict2}
+print(merge_dict)
