@@ -68,13 +68,16 @@ printSquares()
 
 n = int(input("enter no of elements: "))
 def sumValue():
-    lst = list()
+    list = []
     sum = 0
     for i in range(0,n):
         list1 = int(input("Enter list elements: "))
-        lst.append(list1)
-    for i in range(len(lst)):
-        sum = sum + lst[i]
-    print(lst)
+        list.append(list1)
+    for i in range(len(list)):
+        sum = sum + list[i]
+    print(list)
     print(sum)    
-sumValue()    
+sumValue()
+
+# 6.write a function to find sum of given values, pass values has variable number of arguments to function.
+
