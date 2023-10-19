@@ -1,12 +1,14 @@
 def f1(): 
-	f1.s = 'I love python'
-	def f2(): 
-		f1.s = 'Me too'
-		print(f1.s)
+	s = 'Me too'
+	def f2():
+		s = 'I love python'
+		print(s) 
+	f2()
+	print(s)
 
 
-def recursive_factorial(n):
-  if n == 1:
-	  return n
-  else:
-	  return n * recursive_factorial(n-1)
+def Recur_facto(x):
+    if (x == 0):
+        return 1
+    return x * Recur_facto(x-1)
+print(Recur_facto(x=4))
