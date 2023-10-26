@@ -14,35 +14,39 @@
 # print("Employee details: \n"emp_details)
 
 
-#2
-emp_details = {} 
+#2 
+
 def add_employee():
   domain = input("Enter the employee's domain: ")
   name = input("Enter the employee's name: ")
   emp_id = input("Enter the employee's ID: ")
   email = input("Enter the employee's email address: ")
-  employee = {
-    "domain": domain,
-    "name": name,
-    "emp_id": emp_id,
-    "email": email
-  }
-  emp_details = dict(employee)
-  if emp_id in employee:
-    print("Employee details already exists.")
-  else:
-    emp_details.update("\n")
-    print(emp_details)
+  employee = domain,name,emp_id,email
+  employee.save()
+def add_emp_details():
+  employees = employee.all()
+  for employee in employees:
+    employee = {
+      "domain": domain,
+      "name": name,
+      "emp_id": emp_id,
+      "email": email
+    }
+    for emp_id in employees:
+      print("Employee details already exists.")
   print("Employee added successfully!")
 def main():
   while True:
     print("What would you like to do?")
     print("1. Add an employee")
-    print("2. Quit")
+    print("2. Add details to database")
+    print("3. Quit")
 
     choice = input("Enter your choice: ")
     if choice == "1":
       add_employee()
     elif choice == "2":
+      add_emp_details()
+    elif choice == "3":
       break
-main()  
+main()
