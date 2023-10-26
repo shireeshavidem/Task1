@@ -14,24 +14,27 @@
 # print("Employee details: \n"emp_details)
 
 
-#2 
+#2
+emp_details = {} 
 def add_employee():
   domain = input("Enter the employee's domain: ")
   name = input("Enter the employee's name: ")
   emp_id = input("Enter the employee's ID: ")
   email = input("Enter the employee's email address: ")
-employee = {
+  employee = {
     "domain": domain,
     "name": name,
     "emp_id": emp_id,
     "email": email
   }
-  with open("employees.json", "a") as f:
-    json.dump(employee, f)
-    f.write("\n")
+  emp_details = dict(employee)
+  if emp_id in employee:
+    print("Employee details already exists.")
+  else:
+    emp_details.update("\n")
+    print(emp_details)
   print("Employee added successfully!")
 def main():
-  """The main function."""
   while True:
     print("What would you like to do?")
     print("1. Add an employee")
@@ -42,6 +45,4 @@ def main():
       add_employee()
     elif choice == "2":
       break
-
-if __name__ == "__main__":
-  main()  
+main()  
