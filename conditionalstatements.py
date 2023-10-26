@@ -19,7 +19,7 @@ else:
       if letter == "A":
 	      print("letter is A")
       else:
-           print("letter isn't A, B and C")
+         print("letter isn't A, B and C")
           
 
 	

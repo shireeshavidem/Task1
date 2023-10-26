@@ -19,21 +19,22 @@
 # Program to print factorial of a number
 # recursively.
 
-# num = int(input("Enter factorial number: "))
+# n = int(input("Enter factorial number: "))
 # # Recursive function
 # def recursive_factorial(n):
 #   if n == 1:
 # 	  return n
 #   else:
 # 	  return n * recursive_factorial(n-1)
+# print(recursive_factorial(n))
 
 # # check if the input is valid or not
-# if num < 0:
+# if n  < 0:
 #   print("Invalid input ! Please enter a positive number.")
-# elif num == 0:
+# elif n == 0:
 #   print("Factorial of number 0 is 1")
 # else:
-#   print("Factorial of number", num, "=", recursive_factorial(num))
+#   print("Factorial of number", n, "=", recursive_factorial(n))
 
 #Program using non-tail recursion
 # n = int(input("Enter range: "))
@@ -181,7 +182,7 @@ for item in is_even_list:
 	print(item())
 
 #Nested function
-
+#1
 def f1(): 
 	s = 'Me too'
 	def f2():
@@ -191,7 +192,7 @@ def f1():
 	print(s) 
 f1() 
 
-
+#2
 def f1(): 
     s = ['I love python']  
     def f2(): 
@@ -200,3 +201,13 @@ def f1():
     f2() 
     print(s)
 f1()
+
+#3
+def f1(): 
+	f1.s = 'I love python'
+	def f2(): 
+		f1.s = 'Me too'
+		print(f1.s) 
+	f2() 
+	print(f1.s) 
+f1() 
