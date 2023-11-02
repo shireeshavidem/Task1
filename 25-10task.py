@@ -3,8 +3,9 @@
 # input and then print the employee's details. 
 
 emp_details = []
+n = int(input("No.of entries: "))
 def add_employee():
-  for i in range(any):
+  for i in range(0,n):
     emp_domain = input("Enter emp domain: ")
     emp_id = input("Enter emp id: ")
     emp_name = input("Enter emp name: ")
