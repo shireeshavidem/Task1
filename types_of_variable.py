@@ -19,32 +19,44 @@
 # print(Employee.No_of_employees)
 
 
-#instance variable
-class Employee:
-    def __init__(self,ID,name):
-        # Inside of the constructer using self
-        self.ID = ID
-        self.domain = "Python"
-        self.name = name
-    def details(self):
-       # Inside of the instance method
-       self.Email = "siri@gmail.com"
-e = Employee("02047","siri")
-# e1 = Employee("02048","java","ramya")
-e.details()
-print(e.domain)
-print(e.name)
-# Out side of the class using object reference variable
-e.company = "Marolix technology"
-print(e.company)
-print(e.Email)
+# #instance variable
+# class Employee:
+#     def __init__(self,ID,name):
+#         # Inside of the constructer using self
+#         self.ID = ID
+#         self.domain = "Python"
+#         self.name = name
+#     def details(self):
+#        # Inside of the instance method
+#        self.Email = "siri@gmail.com"
+# e = Employee("02047","siri")
+# # e1 = Employee("02048","java","ramya")
+# e.details()
+# print(e.domain)
+# print(e.name)
+# # Out side of the class using object reference variable
+# e.company = "Marolix technology"
+# print(e.company)
+# print(e.Email)
 
 
 #Static variable
-# class Employee:
-#     # within the class
-#     company = "marolix technology"
-#     def __init__(self):
-#         self.Employee = name
-#         self.domain = domain
-#     def emp_details(self):
+class Employee:
+    # within the class
+    company = "marolix technology"
+    def __init__(self):
+        Employee.ID = 2047
+        print()
+    def emp_details(self):
+        Employee.name = "ramya"
+    @classmethod
+    def method(domain):
+        Employee.domain = "python"
+    @staticmethod
+    def method1(email):
+        Employee.email = "ramya@gmail.com"
+e = Employee()
+print(e.company)
+     
+
+
