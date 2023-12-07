@@ -109,8 +109,8 @@ print(common_mem(lst1,lst2))
 # [[2, 3], [4, 5], [1, 1]]
 #using pop()
 listA = [[1, 2, 3], [2, 4, 5], [1, 1, 1]]
-[i.pop(0) for i in listA]
-print(listA)
+# [i.pop(0) for i in listA]
+# print(listA)
 
 #using del
 for i in listA:
@@ -122,8 +122,9 @@ print(listA)
 # Sample list: [11, 33, 50]
 # Expected Output: 113350
 lstA = [123,345,678]
-for i in lstA:
-  print(i, end="")
+# for i in lstA:
+#   print(i, end="")
+  
 
 #using join()
 def convert(lstA):
